@@ -7,30 +7,25 @@
 
 .. important::
 
-   Version |opspy_version| is released.
+   Version |opspy_version| is released!
 
-   OpenSeesPy has been official in `DesignSafe`_.
+   OpenSeesPy is on :doc:`src/pypi`.
 
    The latest version of this document can be found at
    `<https://openseespydoc.readthedocs.io/en/latest/>`_.
-   
-..
-   .. note::
-
-      If you use OpenSeesPy, I would like very much to hear from you. A short email to
-      `zhum@oregonstate.edu <zhum@oregonstate.edu>`_
-      describing who you are and how you use OpenSeesPy will mean a lot to me.
-      I can justify spending time on improvements that I hope will benefit you.
-
 
 .. note::
 
-   Please send any questions to `github issues <https://github.com/zhuminjie/OpenSeesPyDoc/issues>`_.
+   Questions including modeling issues and the use of OpenSeesPy,
+   please post on `OpenSeesPy Forum <https://opensees.berkeley.edu/community/viewforum.php?f=12>`_.
 
    You are very welcome to contribute to OpenSeesPy with new command
    documents and examples
    by sending pull requests
    through `github pulls <https://github.com/zhuminjie/OpenSeesPyDoc/pulls>`_.
+
+   For errors in this document, submit on 
+   `github issues <https://github.com/zhuminjie/OpenSeesPyDoc/issues>`_.
 
 
 ========================
@@ -44,23 +39,34 @@ A minimum script is shown below:
    # import OpenSeesPy
    import openseespy.opensees as ops
 
+   # import OpenSeesPy plotting commands
+   import openseespy.postprocessing.Get_Rendering as opsplt
+
    # wipe model
    ops.wipe()
-   
 
-Most of `OpenSeesPy`_ commands have the same syntax and arguments as the
-OpenSees `Tcl commands <http://opensees.berkeley.edu/wiki/index.php/Command_Manual>`_.
-The conversion from Tcl to Python is easy and straightforward
-as demonstrated with commands below.
+   # create model
+   ops.model('basic', '-ndm', 2, '-ndf', 3)
+
+   # plot model
+   opsplt.plot_model()
+
+To run a test of the pip installation:
+
+::
+
+   pytest --pyargs openseespy.test
 
 
+============
+ Developer
+============
 
-.. topic::
-   *Minjie Zhu* <`zhum@oregonstate.edu <zhum@oregonstate.edu>`_>
+*Minjie Zhu*
 
-   | Faculty Research Assistant
-   | Civil and Construction Engineering
-   | Oregon State University
+| Research Associate 
+| Civil and Construction Engineering
+| Oregon State University
 
    
 .. toctree::
@@ -79,6 +85,8 @@ as demonstrated with commands below.
    src/senscmds
    src/reliabilitycmds
    src/parallelcmds
+   src/preprocessing
+   src/postprocessing
    src/examples
 
 
@@ -86,4 +94,4 @@ as demonstrated with commands below.
 
 .. raw:: html
 
-   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=70&t=n&d=SKQBbxa32RopNU9415W5PDNgdO0XjXnxv2wJdeH0CHw&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=70&t=n&d=SKQBbxa32RopNU9415W5PDNgdO0XjXnxv2wJdeH0CHw'></script>

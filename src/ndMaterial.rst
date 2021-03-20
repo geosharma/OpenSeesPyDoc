@@ -24,6 +24,8 @@ For example,
    nDMaterial(matType, matTag, *matArgs)
 
 
+Standard Models
+---------------
 
 The following contain information about available ``matType``:
 
@@ -66,7 +68,7 @@ The following contain information about available ``matType``:
 
 
 Tsinghua Sand Models
----------------------
+--------------------
 
 #. :doc:`CycLiqCP`
 #. :doc:`CycLiqCPSP`
@@ -87,6 +89,7 @@ Materials for Modeling Concrete Walls
 #. :doc:`PlaneStressUserMaterial`
 #. :doc:`PlateFromPlaneStress`
 #. :doc:`PlateRebar`
+#. :doc:`PlasticDamageConcretePlaneStress`
 
 
 .. toctree::
@@ -96,6 +99,7 @@ Materials for Modeling Concrete Walls
    PlaneStressUserMaterial
    PlateFromPlaneStress
    PlateRebar
+   PlasticDamageConcretePlaneStress
 
 Contact Materials for 2D and 3D
 -------------------------------
@@ -116,12 +120,16 @@ Wrapper material for Initial State Analysis
 -------------------------------------------
 
 #. :doc:`InitialStateAnalysisWrapper`
+#. :doc:`InitStressNDMaterial`
+#. :doc:`InitStrainNDMaterial`
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
    InitialStateAnalysisWrapper
+   InitStressNDMaterial
+   InitStrainNDMaterial
 
 UC San Diego soil models
 ------------------------
@@ -130,6 +138,7 @@ UC San Diego soil models
 #. :doc:`PressureIndependMultiYield`
 #. :doc:`PressureDependMultiYield`
 #. :doc:`PressureDependMultiYield02`
+#. :doc:`PressureDependMultiYield03`
 
 
 .. toctree::
@@ -139,6 +148,7 @@ UC San Diego soil models
    PressureIndependMultiYield
    PressureDependMultiYield
    PressureDependMultiYield02
+   PressureDependMultiYield03
 
 
 UC San Diego Saturated Undrained soil

@@ -5,7 +5,7 @@
 ==============
 
 #. :doc:`pypi`
-#. :doc:`designsafe`
+#. :doc:`otherinstall`
 
 
 .. toctree::
@@ -13,6 +13,6 @@
    :hidden:
 
    pypi
-   designsafe
+   otherinstall
 
 

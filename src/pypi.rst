@@ -1,45 +1,18 @@
 .. include:: sub.txt
 
 
-======
- PyPi
-======
+============================
+ PyPi (Windows, Linux, Mac)
+============================
 
-Install Python
---------------
+#. :doc:`pypiwin`
+#. :doc:`pypilinux`
+#. :doc:`pypimac`
 
-* For Windows, install `Anaconda 2018.12 Windows`_ 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
 
-* For Linux, install `Anaconda 2018.12 Linux`_ 
-
-
-Install OpenSeesPy
-------------------
-
-* In Linux, Open a terminal 
-
-* In Windows, go to start menu -> Anaconda3 (64-bit) -> Anaconda Prompt
-
-* To install
-
-   ::
-
-      pip install openseespy
-
-      pip install --user openseespy
-
-* To upgrade
-
-   ::
-
-      pip install --upgrade openseespy
-
-      pip install --user --upgrade openseespy
-
-   
-Import OpenSeesPy
------------------
-
-::
-
-   import openseespy.opensees as ops
+   pypiwin
+   pypilinux
+   pypimac

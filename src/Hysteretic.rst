@@ -4,7 +4,7 @@
  Hysteretic
 ============
 
-.. function:: uniaxialMaterial('Hysteretic', matTag, *p1, *p2, *p3=p2, *n1, *n2, *n3=n2, pinchX, pinchY, damage1, damage2, beta)
+.. function:: uniaxialMaterial('Hysteretic', matTag, *p1, *p2, *p3=p2, *n1, *n2, *n3=n2, pinchX, pinchY, damage1, damage2, beta=0.0)
    :noindex:
 
    This command is used to construct a uniaxial bilinear hysteretic material object with pinching of force and deformation, damage due to ductility and energy, and degraded unloading stiffness based on ductility.
@@ -29,8 +29,8 @@
    ``n3`` |listf|                        ``n3=[s3n, e3n]``, stress and strain (or force
                                          & deformation) at third point of the envelope
 					 in the negative direction
-   ``pinchx`` |float|                    pinching factor for strain (or deformation) during reloading
-   ``pinchy`` |float|                    pinching factor for stress (or force) during reloading
+   ``pinchX`` |float|                    pinching factor for strain (or deformation) during reloading
+   ``pinchY`` |float|                    pinching factor for stress (or force) during reloading
    ``damage1`` |float|                   damage due to ductility: D1(mu-1)
    ``damage2`` |float|                   damage due to energy: D2(Eii/Eult)
    ``beta`` |float|                      power used to determine the degraded unloading

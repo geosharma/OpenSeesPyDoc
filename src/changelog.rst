@@ -1,6 +1,92 @@
+.. include:: sub.txt
+
 ==============
   Change Log
 ==============
+
+* **Version 3.2.2.9** (1/28/2021)
+
+  * The pip installation will only install needed libraries based on the
+    Operating System, i.e. Windows, Linux, or Mac. The installation time
+    and size are now one third of before.
+  * Bug fixes for Pinching4Material, Concrete07, H5DRM,
+    RCCircularSectionIntegration, ResponseSpectrumAnalysis,
+    PML, FiberSection2d, DriftRecorder,
+
+* **Version 3.2.2.8** (1/8/2021)
+
+  * Linux version is tested with Centos 7, 8, Ubuntu 18.04, 20.04, Fedora, and Debian.
+  * Mac version uses MacPorts for installing Python and dependencies.
+  * Bug fixes for recorders, FourNodeTetrahedron, ASD_SMA_3K, nodeMass,
+  * Add ExpressNewton, RockingBC, CBDI3d, Concrete02IS
+  * Update PETSc Solver, ZeroLengthSection, ForceBeamColumn3d, OOHystereticMaterial, SSPbrickUP, HardeningMaterial, BilinearOilDamper, 
+
+* **Version 3.2.2.6** (10/15/2020)
+
+  * OpenSeesPy is available now on Mac, just type `import openseespy.opensees as ops` on the MacOS. Python3.8 is required and HomeBrew Python is strongly recommended.
+  * SixNodeTri element by Seweryn
+  * PostProcessing package ops_vis by Seweryn
+  
+
+* **Version 3.2.2.5** (9/16/2020)
+
+  * Fix a Windows issue for virtual environment
+
+* **Version 3.2.2.4** (9/10/2020)
+
+  * Bug fixes in Truss and ForceBeamColumn2d
+  * Adding `ops.__version__` variable
+  * Bug fixes in 3D elastic beam
+  * Bug fixes in Tri31
+  * Adding `ops_vis` module for plotting
+  * OpenSees commit b0f6b06
+
+* **Version 3.2.2.3** (8/11/2020)
+
+  * Fix typos in documentation
+  * Add `testNorm` and `testIter` commands
+  * Add Python3.7 and Python 3.8 support
+  * Support latest Anaconda
+  * Improvements of ploting commands
+  * `ShellDKGT` command
+  * Include OpenSees commits upto 380239c on 8/9
+
+* **Version 3.2.2.1** (5/18/2020)
+
+  * add gimmeMCK integrator
+
+* **Version 3.2.2** (5/8/2020)
+
+  * Fix Get_Renderiing tab problem
+  * Ship with dependent libraries for more Linux systems
+
+* **Version 3.2.0** (4.17.2020)
+
+  * Add background mesh command
+  * Add partition command
+  * Add OpenSeesPy test
+  * Many bug fixes
+
+* **Version 3.1.5.11** (1.10.2020)
+
+  * Change versioning method. First two digits match the current `OpenSees`_ framework version. The last two digits are the versions for OpenSeesPy.
+  * For Windows, only support the Python version that corresponds to the current version of `Anaconda`_.
+  * Add openseespy.postprocessing.Get_Rendering 
+  * Add '-init' option to Newmark integrator
+  * Some function can return empty or one-element lists
+  * Spaces in string input will be automatically removed
+  * Bug fixes
+
+* **Version 0.5.4**
+
+  * Support Mac
+  * Support Python3.7 on Windows and Linux
+
+* **Version 0.5.3**
+
+  * Fix bug in LimitState UniaxialMaterial
+  * Automatic trimming spaces for string inputs
+  * Some output commands return lists instead of ints, such as nodeDisp etc.
 
 * **Version 0.5.2**
 
